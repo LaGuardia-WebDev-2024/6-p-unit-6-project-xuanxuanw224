@@ -11,19 +11,42 @@ void draw(){
   strokeWeight(1);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Project Goes Here
-  
 
 
-fill(243, 163, 126);
+fill(200, 185, 165);
+ellipse(200, 200, 800, 800);
+
+fill(129, 117, 104);
+beginShape();
+vertex(0,63)
+vertex(81,55)
+vertex(48,134)
+vertex(44,159)
+vertex(65,263)
+vertex(82,281)
+vertex(58,332)
+vertex(0,337)
+vertex(0,400)
+vertex(200,344)
+vertex(330,0)
+vertex(0,0)
+endShape();
+filter(BLUR, 4); // Blur amount '5'
+//
+fill(131, 95, 73);
+strokeWeight(1); 
+stroke (0,0,0)
 rotate(-.3)
 ellipse(46, 218, 50, 90); //left ear
 rotate(.3)
 //
+fill(243, 163, 126);
 rotate(.3)
 ellipse(336, 100, 50, 90); //left ear
 rotate(-.3)
 //
 
+fill(243, 163, 126);
 stroke (55, 41, 30);
 quad(139,270, 260,270, 260,360, 140,360); //leftup. rightup, leftdown, rightdown neck x,y
 ellipse(200, 170, 190, 280);
@@ -40,12 +63,18 @@ strokeWeight(1);
 stroke (0,0,0)
 //102, 131, 142
 //SHIRT
-fill(146, 192, 204);
+fill(159, 203, 215);
 quad(115, 344, 128, 400, 0, 400, 0, 379); //left shirt
 fill(171, 214, 218);
 quad(275, 344, 272, 400, 400, 400, 400, 379); //right shirt
-fill(222, 249, 238);
-quad(115, 344, 128, 400, 0, 400, 0, 379); //hightlight
+
+fill(213, 248, 227);
+noStroke ()
+quad(115, 344, 114,348, 0, 386, 0, 379); //left hl
+quad(275, 344,  275,354, 400,384, 400, 379); //right hl
+strokeWeight(1); 
+stroke (0,0,0)
+
 fill(100, 135, 150);
 quad(100, 320, 84, 370, 84, 380, 110, 345); //left sink collar
 fill(100, 135, 150);
@@ -58,7 +87,7 @@ fill(125, 171, 192);
 quad(170, 400, 167, 390, 116, 360, 120, 400); //left bottom collar
 fill(146, 192, 204);
 quad(230, 400, 233, 390, 284, 360, 280, 400); //right bottom collar
-quad(230, 400, 233, 390, 284, 360, 280, 400); //right bottom collar
+
 
 //HAIR 
 fill(105, 58, 37);
@@ -85,15 +114,31 @@ vertex(298,173)
 endShape();
 
 //SHADOWS
-
-fill(155, 99, 72);
+noStroke ()
+fill(168, 102, 75);
 beginShape();
 vertex(220,318)
 vertex(180,318)
 vertex(140,281)
 vertex(139,336)
+vertex(131,354)
+vertex(174,342)
+vertex(184,334)
+vertex(211,336)
+vertex(230,327)
+vertex(237,316)
+vertex(243,297)
 endShape();
 
+beginShape();
+vertex(161,300)
+vertex(126,266)
+vertex(106,196)
+vertex(106,170)
+vertex(131,229)
+vertex(143,264)
+vertex(148,279)
+endShape();
 }
 
 
