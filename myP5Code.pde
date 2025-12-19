@@ -237,6 +237,16 @@ fill(124, 81, 58);
 ellipse(155,149,17,15)
 ellipse(245,149,17,15)
 
+noFill(0);
+strokeWeight(0.5);
+stroke (0,0,0)
+arc(247,140,40,20,radians(180),radians(360))
+arc(152,140,40,20,radians(180),radians(360))
+
+line(187,142,187,170)
+line(167,324,185,380)
+line(233,324,215,380)
+
 //stuff
 
 noStroke ()
